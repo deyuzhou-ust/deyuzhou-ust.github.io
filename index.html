@@ -177,14 +177,17 @@
 <body>
     <div class="container">
         <!-- 个人信息 -->
-        <!-- <section class="profile-header">
-            <h1 style="color: var(--primary); margin-bottom: 1rem;">Deyu Zhou</h1>
-            <p style="color: #666; max-width: 800px; margin: 0 auto;">
-                My research interests include interactive world models. My life target is chasing AI for social good. 
-                <br> Please feel free to reach me for any discussions, especially <span style="color: var(--accent); font-weight: 500;">crazy</span> 
-                research and application ideas.
-            </p>
-        </section> -->
+        <section class="profile-header">
+            <h1 class="profile-name">Deyu Zhou</h1>
+            <div class="profile-summary">
+                <p>
+                    I research interactive world models, driven by the lifelong goal of using AI for social good. I'm always excited to discuss new ideas, especially the <span class="highlight">crazy</span> ones. Don't hesitate to get in touch!
+                </p>
+                <p class="collaborators">
+                    I have been very fortunate to work with and learn from Dr. Chen Dong, Dr. Shuangzhi Wu, Dr. Zhaopeng Tu, Dr. Baoyuan Wang, Dr. Zheng Ge, Dr. Nan Duan and Dr. Xiangyu Zhang.
+                </p>
+            </div>
+        </section>
 
         <!-- 主体内容 -->
         <div class="profile-content">
@@ -460,6 +463,19 @@
 }
 
 
+.profile-summary p {
+    color: var(--secondary-color);
+    line-height: 1.6;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto; /* Center and add space between paragraphs */
+}
+
+.collaborators {
+    font-size: 0.9rem; /* Make the collaborators list a bit more subtle */
+    color: #777;
+}
+    
 </style>
 
 <script>
